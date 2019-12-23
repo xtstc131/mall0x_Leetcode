@@ -4,7 +4,9 @@
 
 This repository is used to save my leetcode solutions.  Main language is *C++*.
 
-![](https://github.com/xtstc131/mall0x_Leetcode/blob/master/image.gif)
+<p align="center">
+  <img src="https://github.com/xtstc131/mall0x_Leetcode/blob/master/image.gif">
+</p>
 
 ## Plan
 
