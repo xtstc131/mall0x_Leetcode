@@ -4,7 +4,7 @@
 
 This repository is used to save my leetcode solutions.  Main language is *C++*.
 
-![](/Users/xtstc131/Documents/Trail/Leetcode/12ECC57A19CB98C7F369EF206C540F98.gif)
+![](https://github.com/xtstc131/mall0x_Leetcode/blob/master/image.gif)
 
 ## Plan
 
