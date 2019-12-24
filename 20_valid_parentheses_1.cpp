@@ -1,16 +1,27 @@
-#include<stack>
-#include<string>
+#include <stack>
+#include <string>
 using namespace std;
-bool isValid(string s) {
+bool isValid(string s)
+{
     stack<char> stk;
-    for(const auto& c : s){
-        switch(c){
-            case '{':  stk.push('}'); break;
-            case '[':  stk.push(']'); break;
-            case '(':  stk.push(')'); break;
-            default:
-                if(stk.size() == 0 || c != stk.top()) return false;
-                else stk.pop();
+    for (const auto &c : s)
+    {
+        switch (c)
+        {
+        case '{':
+            stk.push('}');
+            break;
+        case '[':
+            stk.push(']');
+            break;
+        case '(':
+            stk.push(')');
+            break;
+        default:
+            if (stk.size() == 0 || c != stk.top())
+                return false;
+            else
+                stk.pop();
         }
     }
     return stk.size() == 0;
