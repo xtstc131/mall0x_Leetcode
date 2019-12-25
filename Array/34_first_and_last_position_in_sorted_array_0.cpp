@@ -1,4 +1,4 @@
-#include"header.hpp"
+#include "header.hpp"
 class Solution
 {
 public:
@@ -9,15 +9,9 @@ public:
         if (nums.size() < 2)
         {
             if (nums.size() > 0 && nums[0] == target)
-            {
-                vector<int> result = {0, 0};
-                return result;
-            }
+                return vector<int>{0, 0};
             else
-            {
-                vector<int> result = {-1, -1};
-                return result;
-            }
+                return vector<int>{-1, -1};
         }
         while (left <= right)
         {
@@ -30,19 +24,14 @@ public:
                     index_1++;
                 while (index_2 - 1 >= 0 && nums[index_2 - 1] == nums[index_2])
                     index_2--;
-                vector<int> result = {index_2, index_1};
-                return result;
+                return vector<int>{index_2, index_1};
             }
             else if (target < nums[mid])
-            {
                 right = mid - 1;
-            }
             else
-            {
                 left = mid + 1;
-            }
         }
-        vector<int> result = {-1, -1};
-        return result;
+        return vector<int>{-1, -1};
+        ;
     }
 };
