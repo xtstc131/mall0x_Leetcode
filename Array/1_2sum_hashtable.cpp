@@ -1,4 +1,4 @@
-#include"header.hpp"
+#include "header.hpp"
 class Solution
 {
 public:
@@ -6,7 +6,6 @@ public:
     {
         std::unordered_map<int, int> mp;
         std::vector<int> ans;
-
         //  用哈希表来做
         for (int i = 0; i < nums.size(); i++) //  对于数组中的每个数据
         {
