@@ -1,4 +1,4 @@
-#include"header.hpp"
+#include "header.hpp"
 class Solution
 {
 private:
@@ -27,7 +27,7 @@ public:
                 continue;
         }
     }
-    vector<vector<int> > combinationSum(vector<int> &candidates, int target)
+    vector<vector<int>> combinationSum(vector<int> &candidates, int target)
     {
         int len = candidates.size();
         if (len == 0)
