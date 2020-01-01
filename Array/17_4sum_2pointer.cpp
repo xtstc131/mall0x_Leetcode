@@ -9,7 +9,7 @@ public:
         vector<vector<int>> ans;
         if (n < 4)
             return ans;
-        for (int i = 0; i < nums.size() - 3; i++)
+        for (int i = 0; i < n - 3; i++)
         {
             if (target <= 0 and nums[i] > 0)
                 break;
@@ -22,7 +22,7 @@ public:
             // skip duplicates
             if (i > 0 && (nums[i] == nums[i - 1]))
                 continue;
-            for (int j = i + 1; j < nums.size() - 2; j++)
+            for (int j = i + 1; j < n - 2; j++)
             {
                 /* Some more pruning */
                 // nums[j] has become too large, no point in continuing

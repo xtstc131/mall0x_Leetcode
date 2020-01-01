@@ -9,7 +9,7 @@ public:
         auto n = right;
         while (left <= right)
         {
-            int mid = (left + right) / 2;
+            int mid = left + ((right - left) >> 1);
             auto pivot = nums[mid];
             if (pivot == target)
                 return mid;

@@ -13,7 +13,6 @@ public:
             nums[_n] = nums[i];
             _n++;
         }
-        // nums.resize(_n );
         return _n;
     }
 };

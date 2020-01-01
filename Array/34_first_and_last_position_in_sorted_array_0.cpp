@@ -15,7 +15,7 @@ public:
         }
         while (left <= right)
         {
-            int mid = (left + right) / 2;
+            int mid = left + ((right - left) >> 1);
             if (target == nums[mid])
             {
                 auto index_1 = mid;
