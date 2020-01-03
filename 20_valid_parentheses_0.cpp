@@ -1,34 +1,41 @@
-#include<string>
-#include<stack>
+#include <string>
+#include <stack>
 using namespace std;
-class Solution {
+class Solution
+{
 public:
-    bool isValid(string s) {
-        if(s.empty()) return true;
+    bool isValid(string s)
+    {
+        if (s.empty())
+            return true;
         stack<char> Pstack;
-        for(auto c : s){
-            switch(c)
+        for (auto c : s)
+        {
+            switch (c)
             {
-                case '(':
-                case '[':
-                case '{':
-                    Pstack.push(c);
-                    break;
-                case ')': 
-                    if(Pstack.empty() || Pstack.top() != '(') return false; 
-                    else 
-                        Pstack.pop();
-                    break;
-                case ']':
-                    if(Pstack.empty() || Pstack.top() != '[') return false; 
-                    else 
-                        Pstack.pop();
-                    break;
-                case '}': 
-                    if(Pstack.empty() || Pstack.top() != '{') return false; 
-                    else 
-                        Pstack.pop();
-                    break;
+            case '(':
+            case '[':
+            case '{':
+                Pstack.push(c);
+                break;
+            case ')':
+                if (Pstack.empty() || Pstack.top() != '(')
+                    return false;
+                else
+                    Pstack.pop();
+                break;
+            case ']':
+                if (Pstack.empty() || Pstack.top() != '[')
+                    return false;
+                else
+                    Pstack.pop();
+                break;
+            case '}':
+                if (Pstack.empty() || Pstack.top() != '{')
+                    return false;
+                else
+                    Pstack.pop();
+                break;
             }
         }
         return Pstack.empty();

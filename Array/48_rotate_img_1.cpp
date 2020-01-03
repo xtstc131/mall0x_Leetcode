@@ -10,7 +10,7 @@ public:
         { // second flip
             for (int j = i + 1; j < mSize; ++j)
             {
-                std::swap(matrix[i][j], matrix[j][i]);
+                swap(matrix[i][j], matrix[j][i]);
             }
         }
     }
