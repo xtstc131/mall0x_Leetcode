@@ -1,4 +1,4 @@
-#include"header.hpp"
+#include "header.hpp"
 class Solution
 {
 public:
@@ -11,6 +11,6 @@ public:
                                                                    // Think of this as lower_bound and upper_bound combined into one.
         if (iter.first == iter.second)
             return {-1, -1};
-        return {iter.first - begin(nums), iter.second - begin(nums) - 1}; // Minus begin(nums) to get the index of each
+        return {static_cast<int>(iter.first - begin(nums)), static_cast<int>(iter.second - begin(nums) - 1)}; // Minus begin(nums) to get the index of each
     }
 };
