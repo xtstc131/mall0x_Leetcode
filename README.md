@@ -22,8 +22,8 @@ I'll solve leetcode problems with different tags, besides, I'll mainly forcus on
 ### Tags
 
 - [x] Array 
-- [ ] Stack (in progress)
-- [ ] Tree
+- [x] Stack 
+- [ ] Tree (in progress)
 - [ ] Graph
 - [ ] Linked List
 - [ ] Hashmap
