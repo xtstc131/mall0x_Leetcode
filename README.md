@@ -20,10 +20,10 @@ I'll solve leetcode problems with different tags, besides, I'll mainly forcus on
 
 
 ### Tags
-
 - [x] Array 
-- [x] Stack 
+- [x] Stack and Queue
 - [ ] Tree (in progress)
-- [ ] Graph
 - [ ] Linked List
+- [ ] Heap
+- [ ] Graph
 - [ ] Hashmap
