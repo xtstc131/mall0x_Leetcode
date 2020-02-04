@@ -1,4 +1,4 @@
-#include"header.hpp"
+#include "header.hpp"
 class TrieNode
 {
 public:
@@ -9,13 +9,13 @@ public:
 
     TrieNode() : content(' '), isEnd(false), shared(0){};
     TrieNode(char ch) : content(ch), isEnd(false), shared(0) {}
-    // ~TrieNode()
-    // {
-    //     for (auto child : children)
-    //     {
-    //         delete child;
-    //     }
-    // }
+    ~TrieNode()
+    {
+        for (auto child : children)
+        {
+            delete child;
+        }
+    }
 
     TrieNode *subNode(char ch)
     {
