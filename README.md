@@ -10,7 +10,10 @@
 
 This repository is used to save my leetcode solutions.  Main language is *C++*.
 
-![leetcode xyjy](image.gif)
+![leetcode xyjy](image.gif){ 
+    display: block;
+    margin: auto;
+}
 
 ## Plan
 
