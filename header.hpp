@@ -16,6 +16,7 @@
 
 #include <iostream>
 #include <ios>
+#include <list>
 #include <queue>
 #include <sstream>
 #include <stack>
@@ -23,4 +24,18 @@
 #include <unordered_map>
 #include <vector>
 
+struct ListNode
+{
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(nullptr) {}
+};
+
+struct TreeNode
+{
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
 using namespace std;
