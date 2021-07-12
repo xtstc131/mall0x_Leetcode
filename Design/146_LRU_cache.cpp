@@ -12,6 +12,10 @@ public:
         const auto &it = m_.find(key);
         if (it == m_.cend())
             return -1;
+        //   node1 -> node2 ->node* ..... -> node we found-> ....
+        // ^                                      |
+        // |_______________________________________
+        // Move the node we just visited to the head of our cache list.  
         cache_.splice(cache_.begin(), cache_, it->second);
         return it->second->second;
     }
@@ -22,6 +26,10 @@ public:
         if (it != m_.cend())
         {
             it->second->second = value;
+            //   node1 -> node2 ->node* ..... -> node we found-> ....
+            // ^                                      |
+            // |_______________________________________
+            // Move the node we just inserted to the head of our cache list.  
             cache_.splice(cache_.begin(), cache_, it->second);
             return;
         }

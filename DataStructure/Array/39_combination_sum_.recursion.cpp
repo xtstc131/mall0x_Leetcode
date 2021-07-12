@@ -3,7 +3,7 @@ class Solution
 {
 private:
     vector<vector<int>> ans;
-    vector<int> rs;
+    
 
 public:
     void dfs(int nowIndex, int nowSum, vector<int> cand, int candSize, int target)

@@ -11,7 +11,7 @@ class Solution
 public:
     ListNode *swapPairs(ListNode *head)
     {
-        auto dummy = new ListNode(0);   
+        auto dummy = new ListNode(0);
         dummy->next = head;
         auto p1 = dummy;
         auto p2 = head;
