@@ -1,5 +1,5 @@
 class BIT:
-    def __init__(self, n) -> None:
+    def __init__(self, n):
         self.size = n
         self.tree = [0 for _ in range(n+1)]
 
